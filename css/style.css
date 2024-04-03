@@ -8,12 +8,12 @@
 
 body{
     height: 90vh;
-    background-color: #a3a3a3;
+    background-color: #f8fafc;
 }
 
 header {
-    background-color: #7e22ce ;
-    box-shadow: 0px 3px 10px #464646;
+    background-color: #f8fafc ;
+    box-shadow: 0px 3px 10px #ccc;
 }
 
 nav {
@@ -28,7 +28,7 @@ nav {
 }
 
 .logo h1 {
-    color: white;
+    color: black;
     font-size: 1.5rem;
     font-weight: 900;
     text-decoration: none;
@@ -53,10 +53,48 @@ nav {
     text-decoration: none;
     font-size: 1.15rem;
     font-weight: 500;
-    color: white;
+    color: black;
 }
 
 .carrinho a{
-    color: white;
+    color: black;
     
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.frases{
+    margin-bottom: 2rem;
+}
+.frases button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.ofertaPrincipal img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 500px;
 }
