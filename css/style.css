@@ -8,7 +8,6 @@
 
 body{
     width: 100vw;
-    height: 90vh;
     background-color: #f8fafc;
 }
 
@@ -17,22 +16,23 @@ header {
     box-shadow: 0px 3px 10px #ccc;
 }
 
-nav {
+.main-nav {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 6rem;
+    
 }
 
 .logo {
     display: flex;
     align-items: center;
+    font-size: 2.25rem;
 }
 
 .logo h1 {
     color: black;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
-    text-decoration: none;
 }
 
 .nav-list {
@@ -50,6 +50,10 @@ nav {
     margin: 0 15px;
 }
 
+.nav-item a{
+    color: black;
+}
+
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
@@ -57,8 +61,51 @@ nav {
     color: black;
 }
 
-.carrinho a{
-    color: black;
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .main-nav {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    
+
+    .open {
+        display: block;
+    }
+
 }
 
 .title {
@@ -120,7 +167,7 @@ nav {
     display: flex;
     flex-direction: column;
     width: 15%;
-    margin-left: 5vw;
+    margin: 0 2.5vw;
 }
 
 .item img:hover {
