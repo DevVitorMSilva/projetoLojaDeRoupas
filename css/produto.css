@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    background-color: #f8fafc;
+}
+
+header {
+    background-color: #f8fafc;
+    box-shadow: 0px 3px 10px #ccc;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.25rem;
+}
+
+.logo h1 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a{
+    color: black;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: black;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .main-nav {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+
+}
+
+.container {
+    display: flex;
+}
+
+.fotos {
+    width: 31vw;
+}
+
+.fotoPrincipal {
+    margin-top: 3rem;
+    margin-left: 9vw;
+}
+
+.fotoPrincipal img {
+    object-fit: cover;
+    width: 25.2rem;
+    height: 30rem;
+    cursor: pointer;
+}
+
+.fotoSecundarias {
+    width: 30rem;
+    display: flex;
+    margin-left: 9vw;
+}
+
+.fotoMeio {
+    margin: 0 0.5vw;
+}
+
+.foto img {
+    width: 8rem;
+    height: 10rem;
+    cursor: pointer;
+}
+
+.informacoes {
+    height: 30rem;
+    margin-top: 3rem;
+}
+
+.item {
+    margin-top: 10rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    margin-top: 7.8rem;
+}
+
+.quantidade {
+    margin-bottom: 2rem;
+    width: 15rem;
+    height: 2rem;
+    border: solid black 0.5px;
+}
+
+.btnCarrinho {
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
