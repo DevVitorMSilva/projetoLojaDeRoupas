@@ -159,11 +159,26 @@ header {
     margin-top: 7.8rem;
 }
 
-.quantidade {
-    margin-bottom: 2rem;
+.buttonCarrinho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid black 1.5px;
     width: 15rem;
     height: 2rem;
-    border: solid black 0.5px;
+    margin-bottom: 3.7rem;
+}
+
+.buttonCarrinho button {
+    width: 2vw;
+    border: none;
+    background-color: transparent;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.buttonCarrinho span {
+    font-size: 1.5rem;
 }
 
 .btnCarrinho {
