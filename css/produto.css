@@ -112,7 +112,7 @@ header {
 }
 
 .fotos {
-    width: 31vw;
+    width: 33vw;
 }
 
 .fotoPrincipal {
@@ -166,7 +166,7 @@ header {
     border: solid black 1.5px;
     width: 15rem;
     height: 2rem;
-    margin-bottom: 3.7rem;
+    margin-bottom: 1rem;
 }
 
 .buttonCarrinho button {
@@ -179,6 +179,16 @@ header {
 
 .buttonCarrinho span {
     font-size: 1.5rem;
+}
+
+select {
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    background-color:  #f8fafc;
+    border: solid black 1.5px;
 }
 
 .btnCarrinho {

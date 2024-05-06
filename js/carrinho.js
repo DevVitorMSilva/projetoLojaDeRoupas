@@ -4,6 +4,9 @@ var adicionar = document.getElementById('adicionar')
 var remover = document.getElementById('remover')
 var spanQuantidade = document.getElementById('spanQuantidade')
 
+var tamanhoSelect = document.getElementById('tamanho')
+var tamanho  
+
 adicionar.addEventListener('click', function(event) {
     event.preventDefault()
     adicionarItem()
@@ -11,8 +14,9 @@ adicionar.addEventListener('click', function(event) {
 
 function adicionarItem(){
     quantidadeItens++
-    console.log("quantidade de itens " + quantidadeItens)
     spanQuantidade.textContent = quantidadeItens
+    tamanho = tamanhoSelect.value
+    console.log("tamanho: " + tamanho + " quantidade: " + quantidadeItens)
 }
 
 remover.addEventListener('click', function(event) {
@@ -24,5 +28,7 @@ remover.addEventListener('click', function(event) {
 function removerItem() {
     quantidadeItens--
     spanQuantidade.textContent = quantidadeItens
+    tamanho = tamanhoSelect.value
+    console.log("tamanho: " + tamanho + " quantidade: " + quantidadeItens)
 }
 
