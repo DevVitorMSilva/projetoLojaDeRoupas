@@ -16,7 +16,6 @@ function adicionarItem(){
     quantidadeItens++
     spanQuantidade.textContent = quantidadeItens
     tamanho = tamanhoSelect.value
-    console.log("tamanho: " + tamanho + " quantidade: " + quantidadeItens)
 }
 
 remover.addEventListener('click', function(event) {
@@ -29,6 +28,5 @@ function removerItem() {
     quantidadeItens--
     spanQuantidade.textContent = quantidadeItens
     tamanho = tamanhoSelect.value
-    console.log("tamanho: " + tamanho + " quantidade: " + quantidadeItens)
 }
 
