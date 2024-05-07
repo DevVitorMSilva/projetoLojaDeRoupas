@@ -30,3 +30,10 @@ function removerItem() {
     tamanho = tamanhoSelect.value
 }
 
+adicionarCarrinho = document.getElementById('adicionarCarrinho')
+
+adicionarCarrinho.addEventListener('click', function(event) {
+    event.preventDefault()
+    window.localStorage.setItem("Tamanho", tamanho)
+    window.localStorage.setItem("Quantidade", quantidadeItens)
+})
