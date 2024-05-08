@@ -48,10 +48,13 @@ header {
 
 .nav-item {
     margin: 0 15px;
+    cursor: pointer;
 }
 
-.nav-item a{
-    color: black;
+.nav-item button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .nav-link {
@@ -67,6 +70,69 @@ header {
 
 .mobile-menu {
     display: none;
+}
+
+.container-popup {
+    background-color: #f8fafc;
+    border: solid black;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.container-popup.active {
+    display: block;
+}
+
+.popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.topCarrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topCarrinho button, h3 {
+   margin: 0 1rem;
+}
+
+.topCarrinho button{
+    border: none;
+    background-color: transparent;
+    font-size: xx-large;
+    padding: 1rem;
+}
+
+.itensCarrinho {
+    display: flex;
+    justify-content: center;
+
+}
+
+.itemCarrinho {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0.3rem;
+    border-bottom: solid #ccc 1px;
+}
+
+.bottomCarrinho {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 800px) {
@@ -149,14 +215,14 @@ header {
 }
 
 .item {
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     width: 15rem;
-    margin-top: 7.8rem;
+    margin-top: 2.8rem;
 }
 
 .buttonCarrinho {
