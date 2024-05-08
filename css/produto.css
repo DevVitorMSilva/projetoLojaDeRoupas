@@ -82,6 +82,7 @@ header {
     position: fixed;
     right: 0;
     top: 0;
+    margin: 1rem;
 }
 
 .container-popup.active {
@@ -109,6 +110,7 @@ header {
     background-color: transparent;
     font-size: xx-large;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .itensCarrinho {
