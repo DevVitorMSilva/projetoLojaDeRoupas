@@ -7,9 +7,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    width: 100vw;
+html, body{
+    width: 100%;
+    height: 100%;
     background-color: #f8fafc;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 header {
@@ -17,11 +24,15 @@ header {
     box-shadow: 0px 3px 10px #ccc;
 }
 
+main {
+    flex: 1;
+}
+
+
 .main-nav {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
-    
+    padding: 1.5rem 6rem;   
 }
 
 .logo {
@@ -60,6 +71,12 @@ header {
     font-size: 1.15rem;
     font-weight: 500;
     color: black;
+}
+
+#active {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .mobile-menu-icon {
@@ -108,141 +125,38 @@ header {
 
 }
 
-.title {
+.sobreSection {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    align-items: center;
+    width: 100%; 
 }
 
-.subTitle {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.frases{
-    margin-bottom: 2rem;
-}
-.frases button {
-    background-color: black;
-    color: white;
-    border: none;
-    width: 8rem;
-    height: 2.5rem;
-    cursor: pointer;
-}
-
-.ofertaPrincipal img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20rem;
-    height: 31.25rem;
-    cursor: pointer;
-    object-fit: cover;
-}
-
-.ofertaPrincipal img:hover {
-    box-shadow:  12px 12px 23px #bdbdbd,
-             -12px -12px 23px #ffffff;
-}
-
-.tituloModelos{
-    text-align: center;
-    margin: 4vh;
-}
-
-.principaisModelos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    margin: 0 2.5vw;
-}
-
-.item img:hover {
-    box-shadow:  12px 12px 23px #bdbdbd,
-             -12px -12px 23px #ffffff;
-}
-
-.imgModelos{
-    width: 100%;
-    height: 300px;
-    
-}
-
-.titleForm {
-    margin-left: 30vw;
-    margin-top: 3vh;
-}
-
-.formulario {
-    display: flex;
-    justify-content: center;
-    margin-top: 1vh;
-    height: 20vh;
-    width: 100vw;
-    
-}
-
-form {
-    width: 45vw;
-}
-
-.inputs {
+.sobre-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    float: left;
-    margin-left: 2.5vw;
-    width: 20vw;
-
+    text-align: left;
+    width: 80%;
+    margin-top: 5rem;
+    padding: 3rem;
 }
 
-.inputs input {
-    background-color: #d4d4d4;
-    border: none;
-    height: 4vh;
-}
-
-.telefone {
-    margin-top: 25px;
-}
-
-.btnForm {
-    margin-top: 25px;
-    width: 10vw;
-}
-
-.btnForm input[type="submit"]{ 
-    background-color: black;
-    color: white;
-    cursor: pointer;
+.sobre-titulo {
+    margin-bottom: 3rem;
+    font-size: 2rem;
 }
 
 footer {
     width: 100%;
-    height: 10vh;
     display: flex;
     justify-content: center;
 }
 
 .footer {
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
+    margin-bottom: 1rem;
 }
 
 .footer a {
@@ -250,3 +164,4 @@ footer {
     margin-left: 5vw;
     color: black;
 }
+

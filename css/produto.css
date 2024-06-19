@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -82,7 +83,7 @@ header {
     position: fixed;
     right: 0;
     top: 0;
-    margin: 1rem;
+    margin: 0.5rem 4rem;
 }
 
 .container-popup.active {
@@ -245,7 +246,7 @@ header {
     cursor: pointer;
 }
 
-.buttonCarrinho span {
+.buttonCarrinho p {
     font-size: 1.5rem;
 }
 
